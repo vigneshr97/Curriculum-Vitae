@@ -79,22 +79,24 @@
 
 
 \newcommand{\resumeexperiencestart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeexperienceend}{\end{itemize}}
+\newcommand{\resumeexperienceend}{\end{itemize}\vspace{-5pt}}
 \newcommand{\resumeSubHeadingListStart}{\begin{description}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{description}}
+\newcommand{\resumeSubHeadingListEnd}{\end{description}\vspace{-10pt}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
-
+\begin{center}
+\textbf{\Large Radhakrishnan Ravi Vignesh}
+\vspace{-6pt}
+\end{center}
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Radhakrishnan Ravi Vignesh}\\
-  \href{https://www.github.com/vigneshr97}{Github: https://www.github.com/vigneshr97} & Mobile: +1-979-676-6684 \\
+  \href{https://www.github.com/vigneshr97}{Github: https://www.github.com/vigneshr97} & Mobile: 979-676-6684 \\
   \href{https://www.linkedin.com/in/vigneshr97}{Linkedin: https://www.linkedin.com/in/vigneshr97} & Email: \href{mailto:vigneshr97@gmail.com}{vigneshr97@gmail.com}
 \end{tabular*}\vspace{-8pt}
 
@@ -103,86 +105,94 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Texas A\&M University}{College Station, TX}
-      {Master of Science in Civil Engineering;  Specialization: Transportation Engineering}{Aug. 2018 -- Present}
+      {M.S in Civil Engineering;  Specialization: Transportation Engineering; CGPA: 3.6/4}{Aug. 2018 -- Present}
     \resumeSubheading
       {Indian Institute of Technology Madras}{Chennai, India}
-      {B.Tech in Civil Engineering; Minor: Industrial Engineering; CGPA: 8.01/10.00}{Aug. 2014 -- July. 2018}
+      {B.Tech in Civil Engineering; Minor: Industrial Engineering; CGPA: 8.01/10}{Aug. 2014 -- July. 2018}
   \resumeSubHeadingListEnd
 
 %-----------INTERESTS------------------
-\section{Interests}
-   \resumeSubHeadingListStart
-    \ritem
-      {Network Optimization, Computer Vision, Deep Learning}
-  \resumeSubHeadingListEnd
+% \section{Interests}
+%   \resumeSubHeadingListStart
+%     \ritem
+%       {Intelligent Transportation Systems, Traffic Engineering, Data Analysis, Automated Vehicles, Transportation Planning}
+%       \vspace{-6pt}
+%   \resumeSubHeadingListEnd
   
 %-----------SKILLS------------------
 \section{Relevant Technical Skills}
    \resumeSubHeadingListStart
-    \resumeSubItem{Programming Languages}
-      {C, C++, Python, R}
+    \resumeSubItem{Languages and Frameworks}
+      {C, C++, Python, R, MySQL, MATLAB, \LaTeX, Robotic Operating System(ROS)}
     \resumeSubItem{Libraries}
-      {Numpy, OpenCV, Scikit Learn, Pandas, Tensorflow, Keras, Eigen(C++)}
-    \resumeSubItem{Software Skills}
-      {AutoCAD, Revit, MATLAB, Civil 3D, \LaTeX , git}
+      {Numpy, OpenCV, Scikit Learn, Pandas, Tensorflow, Keras, Pytorch}
+    %\resumeSubItem{Software/OS Skills}
+    %  {Robotic Operating System (ROS), git, MATLAB, \LaTeX}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
-\section{Experience}
+\section{Professional Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Bachelor’s Thesis: Optimization of Network Algorithms}{IIT Madras}
-      {Advisor: Dr. Karthik K Srinivasan}{Aug 2017 - June 2018}
+      {Texas A\&M Transportation Institute}{College Station, Texas}
+      {Graduate Research Assistant}{Jan. 2019 - Present}
       \resumeItemListStart
-        \justifying\ritem{Optimized the \textbf{label setting algorithm} given by D.Shier for finding the \textbf{best K elementary paths} in a directed graph and bench marked against other best known algorithms such as that of \href{http://www.dis.uniroma1.it/challenge9/papers/pascoal.pdf}{Marta M.B Pascoal} and Hoffman \& Pavley.}
-        \ritem{Experiments were performed on \textbf{randomized grid networks} and real world networks and compared with other existing algorithms. The algorithm performed significantly better than other algorithms \textbf{asymptotically}.}
-        \justifying\ritem{The algorithm was used to arrive at \textbf{Pareto-optimal} solutions for multi-objective optimization problem}
+        \justifying\ritem{The Transportation Modeling Team Program of TTI performs \textbf{emission inventories} to ensure the Texas transportation system attains national air quality standards. I have been involved in updating the models and computer programs used to estimate regional emissions from travel demand models, emission models and other data.}\justifying\ritem{ The \textbf{python based software} we have developed has improved the speed of emission inventories by a \textbf{factor of 10}, and provides more detailed outputs that will enable more effective transportation-air quality planning}
       \resumeItemListEnd
       
     \resumeSubheading
-      {Tamil Nadu Health Systems Project)}{Government of Tamil Nadu, India}
+      {Tamil Nadu Health Systems Project}{Government of Tamil Nadu, India}
       {Software Developer Intern}{May 2017 - July 2017}
       \resumeItemListStart
-        \ritem
-          {Developed a \textbf{heuristic algorithm} with an accuracy of over \textbf{90\%} to find the victim pickup locations of emergency vehicles and hence automating the data entry of victim pickup time and hospital reach time of the vehicles.}
-        \ritem
-          {The \textbf{zonal distribution} of calls was used for \textbf{greedy allocation} of ambulances optimizing the scene arrival time.}
+        \justifying\ritem
+        { Tamil Nadu Health Systems Project is a department of the Tamil Nadu Government and is responsible for managing \textbf{health services} in the state of Tamil Nadu, India. I developed a \textbf{heuristic algorithm} to predict the victim pickup locations of medical emergencies.}\justifying\ritem{ The model was used to \textbf{optimize} the location of emergency vehicles based on the location of the emergencies and the time taken to transport patients to hospital. The model was based on data describing the location of emergency calls, and used a \textbf{greedy optimization algorithm}. Based on test data, the model had an accuracy of over 90\%, which enabled emergency response vehicles to be distributed more efficiently}%, and led to shorter time between emergency response and transport to hospitals.}
+          %{Developed a \textbf{heuristic algorithm} with an accuracy of over \textbf{90\%} to find the victim pickup locations of emergency vehicles and hence automating the data entry of victim pickup time and hospital reach time of the vehicles}
+        %\ritem
+          %{The \textbf{zonal distribution} of calls was used for \textbf{greedy allocation} of ambulances optimizing the scene arrival time}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
-\section{Projects}
+\section{Relevant Projects}
   \resumeItemListStart
-   \justifying \resumeSubItem{Behavioral Cloning}
-      {Trained a simulator to drive a car around a track smoothly. An \textbf{image regression} model was developed after performing various modifications on NVIDIA's deep neural network architecture using \textbf{Transfer learning} technique. \textbf{Keras} library was used in the implementation.}
-    \justifying\resumeSubItem{Traffic Sign Classifier}
-      {Developed a traffic sign classifier model using deep neural networks with an architecture similar to \textbf{LeNet} using Tensorflow library and obtained \textbf{94\%} test accuracy using German Traffic sign data set. Various \textbf{data augmentation} techniques were employed to arrive at a higher accuracy.}
+  \justifying \resumeSubItem{Car Following Model Using Maximum Entropy Inverse Reinforcement Learning}
+      {Developed a \textbf{Max-Ent IRL} algorithm to predict the behavior of human vehicle behind an Autonomous Vehicle. Based on data from 20 real world cases, the model achieved improved accuracy compared to established models such as \textbf{IDM}.} %Developed a \textbf{Max-Ent IRL} algorithm to predict the behavior of human vehicle behind an Autonomous Vehicle. Achieved a better testing accuracy than popular models like \textbf{IDM} on data from 20 real world demonstrations.}
+  \justifying \resumeSubItem{System Integration (Udacity Self Driving Car Nanodegree Capstone)}
+      {I was part of a group that successfully programmed Carla, the autonomous vehicle of Udacity using \textbf{ROS}. I was responsible for developing traffic light detection using the best performing object detection API’s from \textbf{tensorflow} namely, \textbf{faster\_rcnn} and \textbf{ssd\_mobilenet}} 
+      %for real-world testing and \textbf{ssd\_mobilenet} for simulation.}
+      %Part of a group that successfully programmed Carla, the autonomous vehicle of Udacity using \textbf{ROS}. Responsible for developing traffic light detector using the best performing object detection api's from \textbf{tensorflow} namely, \textbf{faster\_rcnn} for real world testing and \textbf{ssd\_mobilenet} for simulation}
+  \justifying \resumeSubItem{Highway Driving}
+      {Planned and implemented the behavior, path and trajectory of a simulated vehicle on a speed controlled highway. Jerk, acceleration and the travel time were optimized using a suitable cost function in the planning}
+  \justifying \resumeSubItem{Behavioral Cloning}
+      {Trained a simulator to smoothly drive a car around a track using a behavioral cloning technique. An \textbf{image regression model} was developed using \textbf{Keras} after modifying NVIDIA’s deep neural network architecture}
+  \justifying\resumeSubItem{Traffic Sign Classifier}
+      {Developed a traffic sign classifier model using deep neural networks with an architecture similar to \textbf{LeNet} using Tensorflow library and obtained \textbf{94\%} test accuracy on German Traffic sign data set.}
     \justifying\resumeSubItem{Lane Detection}
-      {The lane region and the radii of curvature of the lane boundaries were detected in a video recorded from a car. The video involved various brightness and shadow levels along with different textures on the road.}
-    \justifying\resumeSubItem{Extended Kalman Filters}
-      {The measurements from a noisy Laser and a noisy Radar were \textbf{fused} using Kalman Filter and Extended Kalman Filter Equations and the position and velocity of objects were detected.}
+      {The lane region and the radii of curvature of the lane boundaries were detected in a video recorded from a car. The video involved various brightness and shadow levels along with different textures on the road}
+  %\justifying\resumeSubItem{Market Share Analysis of Car-Sharing in TAMU Student Community}
+  %    {Price and market share analyses were performed based on the various characteristics of Texas A\&M Students, collected from a \textbf{stated preference survey} using an \textbf{ordinal logistic regression model}}
+    \justifying\resumeSubItem{Optimization of Network Algorithms}
+      {Optimized the \textbf{label setting algorithm} given by D.Shier for finding the \textbf{best K elementary paths} in a directed graph and bench marked against other best known algorithms.}
   \resumeItemListEnd
 
 %-----------COURSEWORK----------------
 \section{Coursework}
   \resumeSubHeadingListStart
-    \resumeSubItem{Texas A\&M}
-    {Urban Transportation Planning, Traffic Engineering: Characteristics, Street and Highway Design}
+    \justifying\resumeSubItem{Texas A\&M University and IIT Madras}
+    {Reinforcement Learning, Pattern Recognition, Graph Theory, Flow Algorithms, Probability and Statistics, Analytical Techniques, Operations Research, Industrial Engineering, Computer Simulation, Urban Transportation Planning, Traffic Engineering: Operations and Characteristics}
     \justifying\resumeSubItem
-      {IIT Madras}{Transportation Network Analysis, Analytical Techniques in Transportation Engineering, Fundamentals of Operations Research, Industrial Engineering, Computer Simulation, Computer Applications in Transportation Engineering, Decision Modelling, Probability and Statistics, Differential Equations}
-    \resumeSubItem
-      {Udacity Self Driving Car Engineer Nanodegree}{Computer Vision, Deep Learning, Sensor Fusion}
+      {Udacity Self Driving Car Engineer Nanodegree}{Motion Planning, Computer Vision, Deep Learning, Sensor Fusion, Control, Localization, System Integration}
   \resumeSubHeadingListEnd
 
 
 %-----------EXTRA CURRICULAR ACTIVITIES-----------------
-\section{Extra Curricular Activities}
-  \resumeItemListStart
-    \justifying\rit{\textbf{Captained} IIT Madras Squash Team during 2017-18 including an annual Pan India Sports Meet and also led the team to a silver medal finish in the Inter Collegiate Sports Fest held in Chennai, India}
-    \justifying\rit{Active Volunteer of National Services Scheme of India - IIT Madras Chapter, 2014-15 and taught math to disadvantaged rural children and hence was awarded the \textbf{Star Volunteer Award}}
-  \resumeItemListEnd
+%\section{Extra Curricular Activities}
+%  \resumeItemListStart
+ %   \justifying\rit{\textbf{Captained} IIT Madras Squash Team during 2017-18 including an annual Pan India Sports Meet and also led the team to a \textbf{silver medal} finish in the Inter Collegiate Sports Fest held in Chennai, India}
+    % \justifying\rit{Active Volunteer of National Services Scheme of India - IIT Madras Chapter, 2014-15 and taught math to disadvantaged rural children and hence was awarded the \textbf{Star Volunteer Award}}
+%  \resumeItemListEnd
 
 %-------------------------------------------
 \end{document}
